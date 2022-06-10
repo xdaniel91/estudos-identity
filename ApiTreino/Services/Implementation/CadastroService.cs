@@ -1,11 +1,12 @@
 ﻿using ApiTreino.Dto;
+using ApiTreino.Services.Interfaces;
 using AutoMapper;
 using Microsoft.AspNetCore.Identity;
 using System.Threading.Tasks;
 
 namespace ApiTreino.Services.Implementation
 {
-    public class CadastroService
+    public class CadastroService : ICadastroService
     {
         private readonly UserManager<IdentityUser<int>> _userManager;
         private readonly IMapper _mapper;

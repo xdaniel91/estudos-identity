@@ -17,7 +17,7 @@ namespace ApiTreino.Services.Implementation
             return Result.Fail("falha ao enviar e-mail");
         }
 
-        private MimeMessage CreateEmail(EmailMessage mensagem)
+        private static MimeMessage CreateEmail(EmailMessage mensagem)
         {
             var mensagemEmail = new MimeMessage();
             var remetente = "danielcursoteste@gmail.com";
