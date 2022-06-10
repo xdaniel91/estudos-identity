@@ -1,18 +1,20 @@
 ﻿using ApiTreino.Database.Configuration;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace ApiTreino
 {
-    public class ApplicationContext : DbContext
+    public class ApplicationContext : IdentityDbContext<IdentityUser<int>, IdentityRole<int>, int>
     {
         public DbSet<Person> persons { get; set; }
-        public ApplicationContext(DbContextOptions<ApplicationContext> options) : base(options)
-        {
-        }
 
-        protected override void OnModelCreating(ModelBuilder builder)
+        public ApplicationContext(DbContextOptions<ApplicationContext> options) : base(options) { }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            builder.ApplyConfiguration(new PersonConfiguration());
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.ApplyConfiguration(new PersonConfiguration());
         }
     }
 }

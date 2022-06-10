@@ -24,7 +24,7 @@ namespace ApiTreino.Services.Implementation
             _mapper = mapper;
         }
 
-        public async Task<Result> Add(PersonDto personDto)
+        public async Task<Result<Person>> Add(PersonDto personDto)
         {
             var person = _mapper.Map<Person>(personDto);
             var validationResult = validator.Validate(person);
@@ -35,7 +35,7 @@ namespace ApiTreino.Services.Implementation
                 throw new ArgumentException($"Informações inconsistentes.{Environment.NewLine}{errosString}");
             }
             await _repository.Add(person);
-            return Result.Ok();
+            return Result.Ok(person);
         }
 
         public Result Delete(PersonDto personDto)
@@ -53,7 +53,13 @@ namespace ApiTreino.Services.Implementation
         public async Task<List<PersonDto>> Get()
         {
             var persons = await _repository.Get();
-           return _mapper.Map<List<PersonDto>>(persons);
+            return _mapper.Map<List<PersonDto>>(persons);
+        }
+
+        public async Task<PersonDto> GetById(int id)
+        {
+            var person = await _repository.GetById(id);
+            return _mapper.Map<PersonDto>(person);
         }
 
         public Result Update(PersonDto personDto)

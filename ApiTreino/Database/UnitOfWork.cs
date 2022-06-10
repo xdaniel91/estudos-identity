@@ -1,5 +1,4 @@
-﻿using FluentResults;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 
 namespace ApiTreino.Database
 {
@@ -17,18 +16,16 @@ namespace ApiTreino.Database
             return Task.CompletedTask;
         }
 
-        public async Task<Result> SaveChanges()
+        public async Task<bool> SaveChanges()
         {
-            var sucess = await (_context.SaveChangesAsync()) > 1;
-            if (sucess)
-                return Result.Ok();
-            return Result.Fail("persistence failed");
+            var sucess = await _context.SaveChangesAsync() > 0;
+            return sucess;
         }
     }
 
     public interface IUnitOfWork
     {
-        public Task<Result> SaveChanges();
+        public Task<bool> SaveChanges();
         public Task RollBack();
     }
 }

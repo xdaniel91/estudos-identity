@@ -1,10 +1,3 @@
-C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\obj\Debug\net5.0\ApiTreino.csproj.AssemblyReference.cache
-C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\obj\Debug\net5.0\ApiTreino.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\obj\Debug\net5.0\ApiTreino.AssemblyInfoInputs.cache
-C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\obj\Debug\net5.0\ApiTreino.AssemblyInfo.cs
-C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\obj\Debug\net5.0\ApiTreino.csproj.CoreCompileInputs.cache
-C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\obj\Debug\net5.0\ApiTreino.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\obj\Debug\net5.0\ApiTreino.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\bin\Debug\net5.0\appsettings.json
 C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\bin\Debug\net5.0\ApiTreino.exe
@@ -17,6 +10,8 @@ C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\bin\Debug\net5.0\
 C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\bin\Debug\net5.0\AutoMapper.dll
 C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\bin\Debug\net5.0\Castle.Core.dll
+C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\bin\Debug\net5.0\FluentMigrator.dll
+C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\bin\Debug\net5.0\FluentMigrator.Abstractions.dll
 C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\bin\Debug\net5.0\FluentResults.dll
 C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\bin\Debug\net5.0\FluentValidation.dll
 C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\bin\Debug\net5.0\FluentValidation.DependencyInjectionExtensions.dll
@@ -46,6 +41,14 @@ C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\bin\Debug\net5.0\
 C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
 C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\bin\Debug\net5.0\de-DE\FluentMigrator.Abstractions.resources.dll
+C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\obj\Debug\net5.0\ApiTreino.csproj.AssemblyReference.cache
+C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\obj\Debug\net5.0\ApiTreino.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\obj\Debug\net5.0\ApiTreino.AssemblyInfoInputs.cache
+C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\obj\Debug\net5.0\ApiTreino.AssemblyInfo.cs
+C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\obj\Debug\net5.0\ApiTreino.csproj.CoreCompileInputs.cache
+C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\obj\Debug\net5.0\ApiTreino.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\obj\Debug\net5.0\ApiTreino.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\obj\Debug\net5.0\scopedcss\bundle\ApiTreino.styles.css
 C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\obj\Debug\net5.0\staticwebassets\ApiTreino.StaticWebAssets.Manifest.cache
 C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\obj\Debug\net5.0\ApiTreino.RazorTargetAssemblyInfo.cache

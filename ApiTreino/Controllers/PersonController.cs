@@ -1,6 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+﻿using ApiTreino.Database;
+using ApiTreino.Dto;
+using ApiTreino.Services.Interfaces;
+using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace ApiTreino.Controllers
 {
@@ -8,33 +11,52 @@ namespace ApiTreino.Controllers
     [ApiController]
     public class PersonController : ControllerBase
     {
+        private readonly ISvcPerson svcPerson;
+        private readonly IUnitOfWork unitOfWork;
+        private readonly IMapper mapper;
 
-        [HttpGet]
-        public IEnumerable<string> Get()
+        public PersonController(ISvcPerson svcPerson, IUnitOfWork unitOfWork, IMapper mapper)
         {
-            
+            this.svcPerson = svcPerson;
+            this.unitOfWork = unitOfWork;
+            this.mapper = mapper;
         }
 
-        public string Get(int id)
+        [HttpGet]
+        public async Task<IActionResult> Get()
         {
+            return Ok(await svcPerson.Get());
+        }
 
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(int id)
+        {
+            return Ok(await svcPerson.GetById(id));
         }
 
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<IActionResult> AddAsync([FromBody] PersonDto personDto)
         {
+            var result = mapper.Map<PersonDto>(await svcPerson.Add(personDto));
+            if (await unitOfWork.SaveChanges())
+                return Ok(result);
+            return BadRequest();
         }
 
 
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public async Task<IActionResult> Update([FromBody] PersonDto personDto)
         {
+            svcPerson.Update(personDto);
+            if (await unitOfWork.SaveChanges())
+                return Ok(personDto);
+            return BadRequest();
         }
 
 
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public void DeleteById(int id)
         {
+
         }
     }
 }

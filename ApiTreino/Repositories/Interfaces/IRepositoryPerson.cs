@@ -6,7 +6,7 @@ namespace ApiTreino.Repositories.Interfaces
 {
     public interface IRepositoryPerson
     {
-        public Task<Result> Add(Person person);
+        public Task<Result<Person>> Add(Person person);
         public void Delete(Person person);
         public void Update(Person person);
         public Task DeleteById(int id);

@@ -19,9 +19,10 @@ namespace ApiTreino.Repositories.Implementation
             _persons = context.persons;
         }
 
-        public async Task Add(Person person)
+        public async Task<Result<Person>> Add(Person person)
         {
             await _persons.AddAsync(person);
+            return Result.Ok(person);
         }
 
         public void Delete(Person person)
