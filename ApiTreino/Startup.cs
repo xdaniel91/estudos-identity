@@ -39,10 +39,11 @@ namespace ApiTreino
             /* identity configuration */
             services.AddIdentity<IdentityUser<int>, IdentityRole<int>>(options =>
             {
-                options.SignIn.RequireConfirmedPhoneNumber = true;
+                options.SignIn.RequireConfirmedEmail = true;
                 options.SignIn.RequireConfirmedPhoneNumber = true;
             })
-            .AddEntityFrameworkStores<ApplicationContext>();
+            .AddEntityFrameworkStores<ApplicationContext>()
+            .AddDefaultTokenProviders();
 
             // P: como o jwt vai decriptar/validar o token?
             // R: com nossa key
@@ -71,11 +72,15 @@ namespace ApiTreino
             services.AddScoped<ISvcPerson, SvcPerson>();
             services.AddScoped<IRepositoryPerson, RepositoryPerson>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<ICadastroService, CadastroService>();
+            services.AddScoped<ISvcEmail, SvcEmail>();
+            services.AddScoped<ISvcToken, SvcToken>();
+            services.AddScoped<ISvcLogin, SvcLogin>();
 
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddControllers();
             services.AddSwaggerGen(c =>
-            {
+            { 
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "ApiTreino", Version = "v1" });
             });
 

@@ -1,0 +1,10 @@
+> Integração 
+> Sms enviados
+> criar um novo loopkup no qual seleciono qual tipo de sms quero verificar
+> efetuo a pesquisa a partir do item selecionado no lookup
+> a pesquisa será feita consumindo a api de consulta do best voice, utilizando o id salvo
+> provavelmente criar novas colunas para salvar os status retornados da consulta
+> criar um botão atualizar contato
+> ao atualizar contato, pegar as informações que vieram da consulta e jogar dentro do contato
+
+

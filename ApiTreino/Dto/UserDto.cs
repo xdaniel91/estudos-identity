@@ -4,8 +4,8 @@
     {
         public int Id { get; set; }
         public string Username { get; set; }
-        public int Senha { get; set; }
-        public int Email { get; set; }
-        public int Celular { get; set; }
+        public string Senha { get; set; }
+        public string Email { get; set; }
+        public string Celular { get; set; }
     }
 }

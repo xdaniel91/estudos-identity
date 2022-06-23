@@ -57,3 +57,14 @@ C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\obj\Debug\net5.0\
 C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\obj\Debug\net5.0\ref\ApiTreino.dll
 C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\obj\Debug\net5.0\ApiTreino.pdb
 C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\obj\Debug\net5.0\ApiTreino.genruntimeconfig.cache
+C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\bin\Debug\net5.0\MailKit.dll
+C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\bin\Debug\net5.0\MimeKit.dll
+C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\bin\Debug\net5.0\BouncyCastle.Crypto.dll
+C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\DanielRodriguesCarva\source\repos\ApiTreino\ApiTreino\bin\Debug\net5.0\SendGrid.dll
