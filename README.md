@@ -1,2 +1,3 @@
 # ApiTreino
-Registra usuario, envia e-mail com token de confirmação e faz login.
+⚙️ Funcionalidade:
+Regista um usuário, e envia um link de confirmação via e-mail. 
